@@ -1,0 +1,156 @@
+.mainHeader .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainHeader-nav {
+    display: flex;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    box-sizing: border-box;
+    flex-basis: 12.5%;
+}
+
+.gallery-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.mainFooter-sponsors .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFooter-sponsors-caption {
+    align-items: center;
+    display: flex;
+}
+
+.mainFooter-sponsors-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+    width: 50%;
+}
+
+.mainFooter-contactForm {
+    width: 25%;
+}
+
+.mainFooter-contactForm-fieldset {
+    display: flex;
+}
+
+.mainFooter-contactForm-legend {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mainFooter-navMap-list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 252px;
+}
+
+/* Courses */
+
+.mainContent-courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainContent-courses-link {
+    margin-bottom: 1%;
+    width: 23%;
+}
+
+.mainContent-courses-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* Video about / Benefits */
+
+.videoAbout .container {
+    display: flex;
+}
+
+.videoAbout-about {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.videoAbout-about-list {
+    flex-grow: 1;
+}
+
+.videoAbout-video {
+    flex-grow: 1;
+    flex-shrink: 5;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Mobile */
+
+@media(max-width: 768px) {
+
+    .mainHeader .container {
+        align-items: initial;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainHeader-nav {
+        flex-direction: column;
+    }
+
+    .mainHeader-nav-link-app {
+        order: -1;
+    }
+
+    .mainContent-courses {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainContent-courses-link {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .mainFooter-navMap-list {
+        height: auto;
+    }
+
+    .videoAbout .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainFooter-sponsors .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mainFooter-sponsors-list {
+        margin: 0;
+        width: 100%;
+    }
+
+    .mainFooter-contactForm {
+        width: 100%;
+    }
+
+    .mainFooter-contactForm-fieldset {
+        justify-content: center;
+    }
+}
